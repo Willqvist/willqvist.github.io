@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+* {
+    margin:0;
+    padding:0;
+}
+.header {
+    width:100%;
+    height:100vh;
+    max-height:35rem;
+    display:flex;
+    background:#F4F1DE;
+}
+.header h1 {
+    margin:auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 6.5rem;
+    padding:0 2rem;
+    color: #3D405B;
+    max-width:80rem;
+}
+.underScore, .content p a {
+    position: relative;
+    z-index:1;
+}
+.underScore:after, .content p a:after {
+    content:"";
+    position: absolute;
+    width:100%;
+    height:2rem;
+    background:#E07A5F;
+    bottom:-0rem;
+    left:0;
+    z-index:-1;
+    z-index:-1;
+}
+.content p a:after {
+    height:0.15em;
+    transition:ease 0.2s;
+    overflow: hidden;
+}
+.content p a:hover:after {
+    height:1.2em;
+}
+.content p a {
+    text-decoration: none;
+    font-weight:bold;
+    color:#000;
+}
+.content {
+    width:100%;
+    max-width:80rem;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:4rem;
+}
+.content .imgWrapper {
+    margin-top:0rem;
+    position: relative;
+    z-index:2;
+    padding:0;
+    margin:0;
+}
+.content p {
+    width:100%;
+    max-width:45rem;
+    font-size:1.05rem;
+    font-family: 'Roboto Slab', serif;
+    margin-top:0.5rem;
+    line-height: 1.8rem;
+    text-align:justify;
+    margin-bottom:3rem;
+    color:#000;
+}
+.content h2 {
+    margin-top:3rem;
+    width:45rem;
+    margin-bottom:2rem;
+    font-size:3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #3D405B;
+}
+.content a {
+    color:
+}
+.content h3 {
+    margin-top:0rem;
+    width:45rem;
+    margin-bottom:1.5rem;
+    font-size:2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #3D405B;
+}
+.content .imgWrapper::after {
+    content:"";
+    position: absolute;
+    z-index:-1;
+    width:100%;
+    height:100%;
+    left:0rem;
+    top:0rem;
+    background:#E07A5F;
+    opacity:0;
+    transition:ease 0.2s;
+}
+.content .imgWrapper:hover::after {
+    left:-1rem;
+    top:1rem;
+    opacity:1;
+}
+.back {
+    width:45rem;
+    margin-bottom:2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #3D405B;
+    cursor:pointer;
+    transition: ease 0.2s;
+}
+.back a {
+    color: #3D405B;
+    transition: ease 0.2s;
+text-decoration: none;
+}
+.header .back {
+    width:80rem;
+}
+.back:hover i {
+    margin-right:1.2rem;
+}
+.back:hover a{
+    color: #E07A5F;
+}
+.back i {
+    margin-right:1rem;
+    transition: ease 0.2s;
+}
+.header {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
